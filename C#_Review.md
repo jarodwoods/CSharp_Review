@@ -1,20 +1,12 @@
 # Vocabulary 
 
-
 # Git
-
-
-
 *   **Version Control**: a means for managing your source code
 *   **Git:** A **[distributed version-control](https://en.wikipedia.org/wiki/Distributed_version_control) system (DVCS)** for tracking changes in [source code](https://en.wikipedia.org/wiki/Source_code) during [software development](https://en.wikipedia.org/wiki/Software_development).  It is designed for coordinating work among [programmers](https://en.wikipedia.org/wiki/Programmer), but it can be used to track changes in any set of [files](https://en.wikipedia.org/wiki/Computer_file).
 *   **Github:** GitHub is where our **Remote repository** will live.  Our computer is where our **Local repository** will live. 
 *   **A Commit:** A commit is the Git equivalent of a "save".
 
-
 ## Git Commands:
-
-
-
 *   **git init**: initializes a new repository in the current directory
 *   **git status**: The git status command displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git
 *   **git clone &lt;remote url>**: puts a copy of the remote repository on our machine 
@@ -34,14 +26,10 @@
 *   **git diff:** enables you to compare changes in the working directory against a previously committed version
 *   **_git config --global user.email "[you@example.com](https://meet.google.com/linkredirect?authuser=0&dest=mailto%3Ayou%40example.com)" _**: sets the user email
 *   **_git config --global user.name "Your Name" _**: sets the user name
-
-
+***********
 # C#
-
-
+***********
 ## C# Command-line
-
-
 
 *   **CLI**: The .NET Core command-line interface (CLI) is a new cross-platform toolchain for developing .NET applications. The CLI is a foundation upon which higher-level tools, such as Integrated Development Environments (IDEs), editors, and build orchestrators, can rest. 
 *   **Solution file (.sln)** - a solution is a container used by Visual Studio to organize one or more related projects.  When you open a solution in Visual Studio, it automatically loads all the projects the solution contains
@@ -49,11 +37,7 @@
 *   **cd**: Command-line command to change directory
 *   **mkdir**: Command-line command to create a new folder (directory)
 
-
 ### Dotnet Commands:
-
-
-
 *   **dotne**t **&lt;command>**: dotnet is a tool for managing .NET source code and binaries. It exposes commands that perform specific tasks, such as dotnet build and dotnet run.
 *   **dotnet new**: Creates a new project, configuration file, or solution based on the specified template.
     *   Example: **dotnet new console ←- creates a new console application for us**
@@ -64,11 +48,7 @@
     *   Example: **dotnet test ~/projects/test1/test1.csproj**
 *   **dotnet clean**: The dotnet clean command cleans the output of the previous build. It's implemented as an MSBuild target, so the project is evaluated when the command is run. Only the outputs created during the build are cleaned. Both intermediate (_obj_) and final output (_bin_) folders are cleaned.
 
-
 #### 	Bonus (ASP.NET MVC dotnet command): 
-
-
-
 *   **mkdir** VS_Code-MVC
 *   **cd** VS_Code-MVC
 *   **dotnet new mvc**
@@ -76,40 +56,28 @@
 
 **<span style="text-decoration:underline;">Type the following commands into the terminal</span>**
 
-
 ## Value and Reference Types
-
 C# is a strongly AND statically typed object-oriented programming language.
-
-
-
 *   **Strongly typed**: once a variable’s type is declared, it cannot change. (Although you can change its value)
 *   **Statically typed**: every variable must have a type at compile time.
 *   **Signed**: A signed integer is one with either a plus or minus sign  
 
     in front. (It can be either positive or negative)
-
 *   **Unsigned**: integer is assumed to be positive
-*   **The Stack**: The Stack is used for static memory allocation.  This is where Value Types are stored. It utilizes a LAST IN, FIRST OUT procedure.
-*   **The Heap**: The Heap is used for dynamic memory allocation. This is where Reference types are stored. Elements can be removed in any order from the heap.
+*   **The Stack**: The Stack is used for static memory allocation.  
+This is where Value Types are stored. It utilizes a LAST IN, FIRST OUT procedure.
+*   **The Heap**: The Heap is used for dynamic memory allocation. 
+This is where Reference types are stored. Elements can be removed in any order from the heap.
 *   **Value Type**: A variable of a value type contains an instance of the type.
 *   **Reference Type**: A reference type contains a reference (*pointer) to an instance of the type.
-
-
-
 ![alt_text](CSharp_Data-Types.png)
-
-
 ![alt_text](images/image1.png "image_tooltip")
 
-
-
 ## C# Variables
-
-A variable is a memory location. It has a name that is associated with that location. The memory location is used to hold data. The key difference when comparing a constant to a variable is that the value associated with a variable name may change during the execution of the program.
-
-
-
+A variable is a memory location. It has a name that is associated with that location. 
+The memory location is used to hold data. 
+The key difference when comparing a constant to a variable is that the value 
+associated with a variable name may change during the execution of the program.
 *   **Variable**: A variable is a container for storing value. 
 *   **Constant**: A constant is a container for storing a value that never changes.
 *   **Variable Name**: A variable name is an identifier for the value stored in a particular location of computer memory
@@ -124,11 +92,7 @@ A variable is a memory location. It has a name that is associated with that loca
     *   Example: firstName = “John”;
     *   Example: int age = 11; // Declaring and Initializing a variable
 
-
 ## C# Operators
-
-
-
 *   **Operator**: Operators are special symbols that perform actions on operands
     *   Example : 2 + 2 ( **2** is the operand and **+** is the operator)
 *   **Operand**: The quantity on which the operation is performed.
@@ -145,22 +109,14 @@ A variable is a memory location. It has a name that is associated with that loca
 *   **Logical Operators**: Logical operators are used to combine two or more conditions or to complement the evaluation of the original condition in consideration.
 *   **Assignment Operator**: Assignment operators are used to assign a value to a variable. The left side operand of the assignment operator is a variable and the right side operand of the assignment operator is a value. The value on the right side must be of the same data-type of the variable on the left side otherwise the compiler will raise an error.
 
-
 ## Selection Statements
-
-
-
 *   **Selection Statement**: Selection statements enable you to branch to different sections of code, depending on one or more specified conditions. The components when concerning selection statements are **if**, **else if**, **else**, and **switch/case**.
 *   **switch**: A switch is a selection statement that chooses a single case section to execute based on if the value passed in matches the case conditional. The switch statement is a control statement different from the if statement because it evaluates a single expression against a list of possible cases. <span style="text-decoration:underline;">The switch statement is often used as an alternative to an if-else construct if a single expression is tested against three or more conditions.</span>
 *   **default**: Specifies the code block to run if all else fails.
 *   **break**: Terminates the **switch/case** statement.
 *   **case**: Each case label specifies a pattern to compare to the match expression. If they match, control is transferred to the switch section that contains the first matching case label. If no case label pattern matches the match expression, control is transferred to the section with the default case label, if there's one. If there's no default case, no statements in any switch section are executed, and control is transferred outside the switch statement.
 
-
 ## C# Syntax
-
-
-
 *   **CCR**: Clear, Concise, and Readable
 *   **Syntax**: **Syntax** is the grammar for programming
 *   **Best Practices**: This is syntax that is not required, but is considered the best thing to do.
@@ -173,36 +129,27 @@ A variable is a memory location. It has a name that is associated with that loca
     *   Example : DateTime day1 = new DateTime
 *   **Inferred Typing**: Inferred typing is where the compiler defines the variable’s type by looking at what the variable’s value is and inferring what the most probable type is.
 
-
 ## Iteration Statements & Loops
-
-
-
-*   **while**: The **while** loop executes a statement or a block of statements while a specified Boolean expression evaluates to true. Because that expression is evaluated before each execution of the loop, a while loop executes zero or more times.
-*   **do-while**: The **do-while** loop executes a statement or a block of statements while a specified Boolean expression evaluates to true. Because that expression is evaluated after each execution of the loop, a do-while loop is guaranteed to execute at least one or more times.
+*   **while**: The **while** loop executes a statement or a block of statements while a specified Boolean expression evaluates to true. 
+Because that expression is evaluated before each execution of the loop, a while loop executes zero or more times.
+*   **do-while**: The **do-while** loop executes a statement or a block of statements while a specified Boolean expression evaluates to true. 
+Because that expression is evaluated after each execution of the loop, a do-while loop is guaranteed to execute at least one or more times.
 *   **for**: The “**for**” loop executes a statement or a block of statements while a specified Boolean expression evaluates to true.
     *   the **initializer** - runs once at the beginning and sets an initial value to serve as a counter     **int i = 0;**
     *   the **conditional** - evaluates before each iteration to determine whether the loop should continue executing     **i &lt; 10;**
     *   the **increment** - after the body of the loop is executed, the increment updates the value of the counter     **i++;**
     *   and the **body**  - the is the block of code the loop will execute.  We also call this the **scope** of the loop     **{  }**
-*   **foreach**: A “**foreach**” loop executes a statement or a block of statements for each element in an instance of the type that implements the [System.Collections](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerable).IEnumerable;
-
+*   **foreach**: A “**foreach**” loop executes a statement or a block of statements for each element in an instance of the 
+type that implements the [System.Collections](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerable).IEnumerable;
 Recap:
-
-
-
 1. Use a while loop if you need to execute some code until something happens.
 2. Use a do-while loop if you need to execute some code at least once, then continue execution until something happens.
 3. Use a for loop if you need to execute some code a specific number of times. 
 4. Use a foreach loop if you need to execute some code on each element in a collection of elements.
 
-
 ## Methods/Functions
-
-**Method**: A method, or function, helps you separate your code into modules that perform a given task... You execute this code by calling the Method. In C# a method consists of a few things:
-
-
-
+**Method**: A method, or function, helps you separate your code into modules that perform a given task... 
+You execute this code by calling the Method. In C# a method consists of a few things:
 *   **Access Modifiers**: Access modifiers are keywords used to specify the declared accessibility of a member or a type.
 *   **Return Type**: the type returned by the method, or void when not returning anything
     *   **void**: **void** is the absence of a return type
@@ -212,11 +159,7 @@ Recap:
 *   **Scope/Body**: the block of code to be executed when the method is called
 *   **Argument**: the value you pass into the function when it is being called
 
-
 ## Method Overloading
-
-
-
 *   **Method Overloading**: When multiple methods share the same name but have a different signature
     *   1. The number of parameters
     *   2. The order of the parameters
@@ -228,25 +171,29 @@ Recap:
     *   You should not use ref or out modifiers to overload methods.
     *   You cannot overload method declarations that differ only by return type.
 
-
 ## Arrays & Lists
-
-
-
-*   **Arrays**: Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value. In C#, arrays are actually objects, and not just addressable regions of contiguous memory as in C and C++. Therefore, using dot notation, you have access to the properties and methods of the abstract [Array](https://docs.microsoft.com/en-us/dotnet/api/system.array?view=net-5.0) class.
-*   **Collections**: Collections provide a more flexible way to work with groups of objects. Unlike arrays, the group of objects you work with can grow and shrink dynamically as the needs of the application change. For some collections, you can assign a key to any object that you put into the collection so that you can quickly retrieve the object by using the key.
-
+*   **Arrays**: Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value. 
+In C#, arrays are actually objects, and not just addressable regions of contiguous memory as in C and C++. 
+Therefore, using dot notation, you have access to the properties and methods of the abstract 
+[Array](https://docs.microsoft.com/en-us/dotnet/api/system.array?view=net-5.0) class.
+*   **Collections**: Collections provide a more flexible way to work with groups of objects. 
+Unlike arrays, the group of objects you work with can grow and shrink dynamically as the needs of the application change. 
+For some collections, you can assign a key to any object that you put into the collection so that you can quickly retrieve the object by using the key.
 
 ## Classes
-
 Before classes and Object-Oriented Programming was a thing, programmers used functional programming as a programming paradigm...
-
-
-
-*   **Functional Programming**: Functional programming allows building a program using mathematical functions. In other words, it binds the program into a purely mathematical function. Using functional programming, the developer can build a program as a combination of separate mathematical functions.
-*   **Object-Oriented Programming**: Object-oriented programming (OOP) is a [programming paradigm](https://en.wikipedia.org/wiki/Programming_paradigm) based on the concept of "[objects](https://en.wikipedia.org/wiki/Object_(computer_science))", which can contain [data](https://en.wikipedia.org/wiki/Data) and code: data in the form of [fields](https://en.wikipedia.org/wiki/Field_(computer_science)) (often known as attributes or properties), and code, in the form of procedures (often known as [methods](https://en.wikipedia.org/wiki/Method_(computer_science))).
-*   **Class**: Classes are the cornerstone of Object-Oriented Programming. They help you take all the properties and behaviors of an object in your program, and combine them into a single object, then re-use that object wherever you need it in your program. Using classes in your code enables you to implement **Encapsulation, Abstraction, Inheritance, and Polymorphism**.
-*   **Objec**t: An object is defined as a singular instance of a class or type. A class can be thought of as a blueprint or a cookie cutter. A class describes an object, but it is not that object.
+*   **Functional Programming**: Functional programming allows building a program using mathematical functions. 
+In other words, it binds the program into a purely mathematical function. Using functional programming, the developer can build a program 
+as a combination of separate mathematical functions.
+*   **Object-Oriented Programming**: Object-oriented programming (OOP) is a [programming paradigm](https://en.wikipedia.org/wiki/Programming_paradigm) 
+based on the concept of "[objects](https://en.wikipedia.org/wiki/Object_(computer_science))", which can contain [data](https://en.wikipedia.org/wiki/Data) 
+and code: data in the form of [fields](https://en.wikipedia.org/wiki/Field_(computer_science)) (often known as attributes or properties), and code, 
+in the form of procedures (often known as [methods](https://en.wikipedia.org/wiki/Method_(computer_science))).
+*   **Class**: Classes are the cornerstone of Object-Oriented Programming. They help you take all the properties and behaviors of an object 
+in your program, and combine them into a single object, then re-use that object wherever you need it in your program. Using classes in your 
+code enables you to implement **Encapsulation, Abstraction, Inheritance, and Polymorphism**.
+*   **Objec**t: An object is defined as a singular instance of a class or type. A class can be thought of as a blueprint or a cookie cutter. 
+A class describes an object, but it is not that object.
 *   **Class Members**: Classes have members sort of like how methods have variables; however, classes are not only limited to variables. Examples:
     *   **Fields** - a variable of any type that is declared directly in a class or struct.
     *   **Properties** - a member that provides a mechanism to read, write, or compute the value of a private field.
@@ -255,13 +202,11 @@ Before classes and Object-Oriented Programming was a thing, programmers used fun
 *   **Dot Notation**: The way we access the methods and properties of a class is with the ( . ) **Dot** operator, Dot Notation, or Class Member Access Operator.
 
     **Parts of a class**
-
 1. **Access Modifier** Keywords - **OPTIONAL**
 2. **class** keyword - **REQUIRED**
 3. **Name** - **REQUIRED**
 4. **Scope** or “curly brackets” - **REQUIRED**
     1. **Fields/Properties** - **OPTIONAL**
     2. **Methods** - **OPTIONAL**
-
 
 ## Encapsulation
